@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Main {
+public class Homework4 {
     static int gcd(int n, int m){
         if(m == 0) return n;
         int mx = (m > n ? m : n);
