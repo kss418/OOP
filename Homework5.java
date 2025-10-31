@@ -27,11 +27,11 @@ class Computer{
         this.hd = hd; this.color = color; this.power = power;
     }
 
-    void turnOn(){
+    public void turnOn(){
         System.out.println("Turning on the computer");
     }
 
-    void printInfo(){
+    public void printInfo(){
         System.out.println("The spec of the computer");
         System.out.println("\tCpu: " + cpu);
         System.out.println("\tmemory: " + memory);
@@ -42,14 +42,14 @@ class Computer{
 }
 
 class PersonalComputer{
-    Computer computer;
-    Monitor monitor;
-    void turnOn(){
+    private final Computer computer;
+    private final Monitor monitor;
+    public void turnOn(){
         computer.turnOn();
         monitor.turnOn();
     }
 
-    void printInfo(){
+    public void printInfo(){
         computer.printInfo();
         monitor.printInfo();
     }
